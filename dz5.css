@@ -5,3 +5,11 @@
   .text2 {
     background-color: green;
   }
+
+
+  .box {
+   width: 150px;
+   height: 150px;
+   background: blue
+   margin-right: 50px;
+}
