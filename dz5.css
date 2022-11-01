@@ -10,6 +10,7 @@
   .box {
    width: 150px;
    height: 150px;
-   background: blue
+   display: inline;
+   background: blue;
    margin-right: 50px;
 }
