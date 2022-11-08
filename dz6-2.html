@@ -23,12 +23,19 @@
     box-shadow: 10px 10px 30px #a896b8;
      }
 
-.container {display: flex;
+.contant {display: flex;
     height: 100%;
     flex-direction: row;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+    display:table;
+}
 
-.block {display: flex;
+.inner-content{
+  width: 100%;
+  display: inline;
+   }
+
+.inner-content-1 {display: flex;
         width: 30%;
         text-align: center;
         box-shadow: 10px 10px 5px rgb(185, 183, 183);
@@ -39,7 +46,8 @@
         border: none;
         background-color: rgba(241, 236, 236, 0.818);
         display: inline-block;
-        padding-bottom:50px;
+        padding-bottom:50px;  
+        display: table-cell;  
     }
 
 .text {display: flexbox;
@@ -69,11 +77,6 @@
   .a:hover { box-shadow: inset 0 -60px 0 #898b91, 2px 2px 3px rgba(154, 152, 152, 0.3);
         color: #393837;}
        
-    @media screen and (max-width: 450px) {
-            .block {width: 100%;}
-        }
-
-
 
 </style>
 
@@ -85,14 +88,16 @@
         <p>Достопримечательности Тункинской долины</p>
     </h1>
 
-<div class="container">
-        <div class=block><div class="text"><h2>Бурхан Баабай</h2>
+<div class="contant">
+    <div class="inner-content">
+
+        <div class=inner-content-1><div class="text"><h2>Бурхан Баабай</h2>
         <div><img class="img" src="https://baikaltravel.ru/upload/iblock/e70/mwz4zjkccq4.jpg"></div>
         <p>Во времена, когда в Тункинской долине основной религией был шаманизм, это место носило имя Шаргай-Нойона – по преданию – героя богатыря, спустившегося с небес для борьбы с монгольскими захватчиками. Со временем он превратился в сознании народа в бога Хана Шаргай нойона, главу хаатов, восседающих на гребнях Саянских гор. Легенда рассказывает о том, что Шаргай-Нойон спустился с неба на соловом коне, в полном вооружении кочевого воина, его скакуны рыли склон горы, отчего появился белый песок, который обладает особой силой, как оберег для воинов и защитников родной земли. Бурятские воины всегда молились здесь и брали с собой священный песок, который должен был уберечь от гибели и неприятностей. В честь этого в 1867 г. был построен небольшой сруб для молитв. Эта традиция сохраняется до сих пор. В Великую Отечественную Войну, воины-хойтогольцы, уходя на фронт, также брали с собой мешочки со священным песком, и по их рассказам это часто спасало их. </p></div>
         <div class="b"><a class="a" href="http://www.visitburyatia.ru/places/section-144/item-437/" target="blank">Подробнее</a></div>
     </div>
 
- <div class="block">
+ <div class="inner-content-1">
     <div class="text"><h2>Нилова-Пустынь</h2>
     <div><img class="img" src="https://s9.travelask.ru/system/images/files/001/476/291/wysiwyg_jpg/3622861_%281%29.jpg?1623411605"></div>
     <p>Нилова Пустынь - это уникальный бальнеологический курорт в Бурятии, в которой применяются радоновые ванны. Данная местность прославилась на всю Россию силой своих вод. Лечебница, расположилась в Тункинском районе республики Бурятия, у подножья Саянских гор, на высоте более 900 метров над уровнем моря, в том месте, где из-под земли бьют источники с кристально чистой водой, водой с ионами серебра, термальными, минерализированными водами и, конечно же, воды с радоном.</p>
@@ -100,7 +105,7 @@
 <div class="b"><a class="a" href="https://pustin-nilova.ru/" target="blank">Подробнее</a></div>
 </div>
 
-    <div class="block">
+    <div class="inner-content-1">
         <div class="text"><h2>Пик любви</h2>
         <div><img class="img" src="https://turisticum.ru/img/baikal/archan-pik/740_archan-pik_30.jpg"></div>
     <p>В одном улусе полюбили друг друга парень и девушка. Но сказали старики, что в слишком тесном родстве состоят их родовые ветки и смешивается кровь рода, а потому брака между ними быть не может. </p>
@@ -111,6 +116,7 @@
         <div class="b"><a class="a" href="https://baikalov.ru/guide/legends/arshan/" target="blank">Подробнее</a></div>                
     </div>
     </div>
+</div>
    
   </body>
 </html>
