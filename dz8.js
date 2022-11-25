@@ -75,4 +75,4 @@ alert (profitBuuzy)
 
 // 6.удалить из массива все элементы кроме поз
 food.splice(1,2)
-alert (food);
+alert (JSON.stringify(food));
