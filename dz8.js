@@ -32,9 +32,11 @@ let sauce = {
 //2. блюда и их ингредиенты
 let buuzy = {
     ingredients: [dough.name, beef.name, mutton.name],
+    costPrice: dough.price+beef.price+mutton.price,
     margin: 1.3
 }
 alert(JSON.stringify(buuzy.ingredients))
+alert(JSON.stringify(buuzy.costPrice))
 
 let koreanChiken = {
     ingredients: [chiken.name, sauce.name],
@@ -62,15 +64,14 @@ alert (JSON.stringify(food));
 buuzy.ingredients.splice(2,1);
 alert (buuzy.ingredients);
 
-// 5. Укажите сколько вы потратите на приготовление и за сколько будете их продавать.
-let menuBuuzy=dough.price+beef.price;
-alert (menuBuuzy); //сколько потратили на buuzy
 
-let priceBuuzy=menuBuuzy*buuzy.margin
+// 5. Укажите сколько вы потратите на приготовление и за сколько будете их продавать.
+
+let priceBuuzy=buuzy.costPrice*buuzy.margin
 alert(priceBuuzy) //за сколько буду продавать
 
 //сколько заработаем на каждом блюде
-let profitBuuzy=priceBuuzy-menuBuuzy
+let profitBuuzy=priceBuuzy-buuzy.costPrice
 alert (profitBuuzy)
 
 // 6.удалить из массива все элементы кроме поз
