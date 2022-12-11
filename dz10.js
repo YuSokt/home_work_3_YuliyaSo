@@ -10,50 +10,71 @@ for (let i = 0; i <= 10; i++) {
 }
 
 // Задание 1*. ⭐не используйте оператор continue.
-let i = 1;
 
-while (true) { // условие всегда будет истинно
-  alert(i % 2 === 1); // выводит 1, затем 2, затем 3
-  if (i === 10) {
-    break;  // если i равен 3 прерываем выполнение цикла
-  }
-
-  i++;
+for (let i = 0; i <= 10; i = i + 2) {
+  alert(i)
 }
+
 
 // Задание 2. Создайте бесконечный цикл и прервите его на 5ой итерации.
 let i = 0;
-while (i < 6) {
+while (i <= 5) {
   alert(i);
   i++;
 }
 
-// Задание 3. Создайте массив блюд, с названием, ингредиентами, ценой приготовления и ценой реализации. (прямо как в уроке номер 8). Посчитайте с помощью цикла профит для каждого блюда и запишите его в объект блюда.
-let buuzy = [
-  'buuzy',
-  {ingredients: ['dough', 'beef', 'mutton']},
-  {costPrice:'30'},
-  {sale:'40'}
-];
-alert(JSON.stringify(buuzy [1].ingredients));
-
+// Задание 3. 
+let ingredients = ['dough', 'beef', 'mutton', 'chiken', 'sauce', 'cheese']
+  ingredients[0]=100;
+  ingredients[1]=280;
+  ingredients[2]=260;
+  ingredients[3]=150;
+  ingredients[4]=80;
+  ingredients[5]=90;
 
 let buuzy = {
+  name: 'buuzy',
   ingredients: ['dough', 'beef', 'mutton'],
-  costPrice: 30,
-  sale: 40
+  sale: 800
+};
+
+let buuzyPrice=0 
+for(let i=0; i<buuzy.ingredients.length; i++) {
+  buuzyPrice+=ingredients[i];
 }
+let buuzyProfit=buuzy.sale-buuzyPrice
+
+alert (`Выручка с буз ${buuzyProfit} рублей`);
+
 
 let koreanChiken = {
+  name: 'koreanChiken',
   ingredients: ['chiken', 'sauce'],
-  costPrice: 280
   sale: 430
 }
 
+let koreanChikenPrice=0
+for(let i=0; i<koreanChiken.ingredients.length; i++) {
+  koreanChikenPrice+=ingredients[i];
+}
+let koreanChikenProfit=koreanChiken.sale-koreanChikenPrice
+
+alert (`Выручка с корейской курицы ${koreanChikenProfit} рублей`);
+
 let pizza = {
+  name: 'picca',
   ingredients: ['dough', 'chiken', 'cheese'],
-  costPrice: 180
   sale: 470
 }
+
+let pizzaPrice=0
+for(let i=0; i<pizza.ingredients.length; i++) {
+  pizzaPrice+=ingredients[i];
+}
+let pizzaProfit=pizza.sale-pizzaPrice
+
+alert (`Выручка с пиццы ${pizzaProfit} рублей`);
+
+let menu= [buuzy, koreanChiken, pizza]
 
 
