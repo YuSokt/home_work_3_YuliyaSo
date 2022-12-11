@@ -9,6 +9,9 @@ let chiken = {
     price: 450
 };
 
+let profit1=chiken.price[0]-dough.price[1]
+alert (profit1)
+
 let beef = {
     name: 'beef',
     price: 480
