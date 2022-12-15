@@ -65,7 +65,6 @@ for(let i=0; i<koreanChiken.ingredients.length; i++) {
   koreanChikenPrice+=ingredientsPrice[name];
 }
 let koreanChikenProfit=koreanChiken.sale-koreanChikenPrice
-
 alert (`Прибыль c корейской курицы ${koreanChikenProfit} рублей`);
 
 let pizza = {
