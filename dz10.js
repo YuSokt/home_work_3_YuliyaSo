@@ -28,7 +28,7 @@ for (i = 0; ; i++) {
   // alert(`${key} = ${ingredients[key]}`);}
 
 // Задание 3. 
-let ingredients = {
+let ingredientsPrice = {
   dough: 100,
   beef: 280,
   mutton: 260,
@@ -45,11 +45,10 @@ let buuzy = {
 
 let buuzyPrice=0 
 for(let i=0; i<buuzy.ingredients.length; i++) {
-  buuzyPrice+=buuzy.ingredients[i];
+  let name=buuzy.ingredients[i];
+  buuzyPrice+=ingredientsPrice[name];
 }
 let buuzyProfit=buuzy.sale-buuzyPrice
-
-
 
 alert (`Выручка с буз ${buuzyProfit} рублей`);
 
@@ -60,9 +59,10 @@ let koreanChiken = {
   sale: 430
 }
 
-let koreanChikenPrice=0
+let koreanChikenPrice=0 
 for(let i=0; i<koreanChiken.ingredients.length; i++) {
-  koreanChikenPrice+=ingredients[i];
+  let name=koreanChiken.ingredients[i];
+  koreanChikenPrice+=ingredientsPrice[name];
 }
 let koreanChikenProfit=koreanChiken.sale-koreanChikenPrice
 
@@ -74,14 +74,14 @@ let pizza = {
   sale: 470
 }
 
-let pizzaPrice=0
+let pizzaPrice=0 
 for(let i=0; i<pizza.ingredients.length; i++) {
-  pizzaPrice+=ingredients[i];
+  let name=pizza.ingredients[i];
+  pizzaPrice+=ingredientsPrice[name];
+  alert (pizzaPrice);
 }
 let pizzaProfit=pizza.sale-pizzaPrice
 
 alert (`Выручка с пиццы ${pizzaProfit} рублей`);
-
-let menu= [buuzy, koreanChiken, pizza]
 
 
