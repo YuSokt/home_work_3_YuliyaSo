@@ -17,20 +17,25 @@ for (let i = 0; i <= 10; i = i + 2) {
 
 
 // Задание 2. Создайте бесконечный цикл и прервите его на 5ой итерации.
-let i = 0;
-while (i <= 5) {
-  alert(i);
-  i++;
+for (i = 0; ; i++) {
+  if (i === 5)
+      break; {
+      alert(i);
+  }
 }
 
+// for (key in ingredients) {
+  // alert(`${key} = ${ingredients[key]}`);}
+
 // Задание 3. 
-let ingredients = ['dough', 'beef', 'mutton', 'chiken', 'sauce', 'cheese']
-  ingredients[0]=100;
-  ingredients[1]=280;
-  ingredients[2]=260;
-  ingredients[3]=150;
-  ingredients[4]=80;
-  ingredients[5]=90;
+let ingredients = {
+  dough: 100,
+  beef: 280,
+  mutton: 260,
+  chiken: 150,
+  sauce: 80,
+  cheese: 90
+}
 
 let buuzy = {
   name: 'buuzy',
@@ -40,9 +45,11 @@ let buuzy = {
 
 let buuzyPrice=0 
 for(let i=0; i<buuzy.ingredients.length; i++) {
-  buuzyPrice+=ingredients[i];
+  buuzyPrice+=buuzy.ingredients[i];
 }
 let buuzyProfit=buuzy.sale-buuzyPrice
+
+
 
 alert (`Выручка с буз ${buuzyProfit} рублей`);
 
