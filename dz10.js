@@ -50,7 +50,7 @@ for(let i=0; i<buuzy.ingredients.length; i++) {
 }
 let buuzyProfit=buuzy.sale-buuzyPrice
 
-alert (`Прибыль с буз ${buuzyProfit} рублей`);
+alert (`Прибыль c буз ${buuzyProfit} рублей`);
 
 
 let koreanChiken = {
@@ -66,7 +66,7 @@ for(let i=0; i<koreanChiken.ingredients.length; i++) {
 }
 let koreanChikenProfit=koreanChiken.sale-koreanChikenPrice
 
-alert (`Прибыль с корейской курицы ${koreanChikenProfit} рублей`);
+alert (`Прибыль c корейской курицы ${koreanChikenProfit} рублей`);
 
 let pizza = {
   name: 'picca',
@@ -82,6 +82,6 @@ for(let i=0; i<pizza.ingredients.length; i++) {
 }
 let pizzaProfit=pizza.sale-pizzaPrice
 
-alert (`Прибыль с пиццы ${pizzaProfit} рублей`);
+alert (`Прибыль c пиццы ${pizzaProfit} рублей`);
 
 
