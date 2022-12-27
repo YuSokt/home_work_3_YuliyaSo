@@ -1,4 +1,4 @@
-function calcProfit(ingredients, ingredientsPrice, sale) {
+export function calcProfit(ingredients, ingredientsPrice, sale) {
     let cost = 0; 
      for (let i=0; i < ingredients.length; i++) {
       let ingredientName = ingredients[i];
@@ -8,4 +8,4 @@ function calcProfit(ingredients, ingredientsPrice, sale) {
    }
 
 
-   export default calcProfit;
+  //  export default calcProfit; 

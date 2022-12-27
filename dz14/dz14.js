@@ -1,4 +1,5 @@
-import calcProfit from "../scripts/function.js";
+// import calcProfit from "../scripts/function.js";
+import {calcProfit} from "../scripts/function.js";
 
 let ingredientsPrice = {
     dough: 100,
