@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Пицца",
+        "ingredients": [
+            "dough",
+            "salami",
+            "vegetables"
+        ],
+        "price": 150
+    },
+    {
+        "name": "Буузы",
+        "ingredients": [
+            "dough",
+            "meat",
+            "mutton"
+        ],
+        "price": 90
+    },
+    {
+        "name": "Паста",
+        "ingredients": [
+            "souce",
+            "spaghetti"
+        ],
+        "price": 100
+    },
+    {
+        "name": "Торт",
+        "ingredients": [
+            "dough",
+            "sugar",
+            "fruit"
+        ],
+        "price": 120
+    }
+]
